@@ -1,0 +1,23 @@
+{
+  "name": "create-onex-app",
+  "version": "0.1.0",
+  "description": "Create a new OnexJS app",
+  "main": "dist/index.js",
+  "bin": {
+    "create-onex-app": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  },
+  "license": "MIT"
+}

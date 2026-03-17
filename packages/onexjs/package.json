@@ -1,0 +1,32 @@
+{
+  "name": "onexjs",
+  "version": "0.1.0",
+  "description": "The React Native framework for every platform",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "tauri",
+    "cross-platform"
+  ],
+  "license": "MIT"
+}

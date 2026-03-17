@@ -1,0 +1,24 @@
+{
+  "name": "@onexjs/cli",
+  "version": "0.1.0",
+  "description": "OnexJS CLI - Dev and build orchestrator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "onex": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "onexjs": "workspace:*"
+  },
+  "license": "MIT"
+}
