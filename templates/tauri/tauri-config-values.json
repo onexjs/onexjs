@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "devCommand": "pnpm dev:web",
+    "buildCommand": "pnpm build:web",
+    "devUrl": "http://localhost:8081",
+    "frontendDist": "../dist"
+  },
+  "vite": {
+    "devCommand": "pnpm dev",
+    "buildCommand": "pnpm build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "nextjs": {
+    "devCommand": "pnpm dev",
+    "buildCommand": "pnpm build",
+    "devUrl": "http://localhost:3000",
+    "frontendDist": "../out"
+  }
+}
